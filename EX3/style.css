@@ -1,0 +1,34 @@
+body{
+    height:80vh;
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    height:100vh;
+    background: url(bg.jpg);
+    background-position: bottom left;
+    animation: moving 15s linear infinite;
+}
+
+.car{
+    position: absolute;
+    left: 300px;
+    bottom:15px;
+    height: 160px;
+    width: 160px;
+}
+.motobike{
+    position: absolute;
+    left: 0px;
+    bottom:5px;
+    height: 160px;
+    width: 160px;
+}
+
+@keyframes moving {
+    from {background-position: bottom left;}
+    to {background-position: bottom right;}
+
+    /* 100% {transform: rotateZ(180deg);} */
+}
