@@ -1,0 +1,24 @@
+body{
+    background-color: green;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    perspective: 100px;
+}
+
+.loading {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 12px;
+    animation: moving 2s linear infinite alternate;
+}
+
+
+@keyframes moving {
+    0% {transform: rotateX(0deg) rotateY(0deg);}
+    50% {transform: rotateX(0deg) rotateY(180deg);}
+    100% {transform: rotateX(180deg) rotateY(180deg);}
+    /* 100% {transform: rotateZ(180deg);} */
+}
