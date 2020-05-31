@@ -1,0 +1,19 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+span:before {
+    content: 'A';
+    animation: change-text 2s infinite; 
+}
+
+
+@keyframes change-text {
+   0% {content: 'A'}
+   50% {content: 'B'}
+   100% {content: 'C'}
+
+}
