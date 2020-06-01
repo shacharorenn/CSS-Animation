@@ -4,16 +4,15 @@ body{
     justify-content:center;
     align-items:center; */
     background: url('bg.png');
-    height: 10vh;
-    background-position: 600px 600px;
-    animation: moving 2s linear infinite;
+    background-position: top left;
+    animation: moving 15s linear infinite;
 
 }
 
 
 
 @keyframes moving {
-   /* from {background-position: 0 0;}
-   to {background-position: 600px 600px;} */
+   from {background-position: 0 0;}
+   to {background-position: 600px 600px;}
 
 }
