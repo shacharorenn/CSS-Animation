@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 20px 50px 20px 50px;
+    font-size: 30px;
+    color: black;
+    border:3px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+a:before {
+    content: '';
+    background-color: red;
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    top: 0;
+    left: 0;
+    transform: skewX(-15deg);
+    z-index: -1;
+    animation: moving 1.2s linear infinite;
+    transition: all 0.5s;
+}
+
+a:hover:before {
+    transform: skewX(0);
+    width: 100%;
+    animation: none;
+}
+
+@keyframes moving {
+    from {left: -120px;}
+    to {left:100%;}
+
+}
